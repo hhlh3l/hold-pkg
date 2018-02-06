@@ -126,7 +126,7 @@ def unhold_pkg():
 str_help = '''
 --help      查看帮助;
 --init      写默认关键字到key_list,按照关键字查找包并写入pkg_list;
-            文件在程序运行目录,可以手动改写,使用'#'注释,只支持整行注释;
+            文件在~/.hold-pkg目录下,可以手动改写,使用'#'注释,只支持整行注释;
 --list      按照key_list表刷新pkg_list;
 --hold      按照pkg_list列表名称hold package;
 --unhold    按照pkg_list列表名称解除package的hold状态;
