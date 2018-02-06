@@ -1,4 +1,4 @@
-#+OPTIONS: "\n:t"  
+#+OPTIONS:\n:t
 
 *** hold你的linux桌面版
     通过设置package的hold或install属性，达到锁定/解锁package的目的，当package被设置成hold后，不能被删除和升级
