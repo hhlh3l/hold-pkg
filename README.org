@@ -1,13 +1,13 @@
 * 这么hold住你的linux桌面
 * 安装
 * 使用说明
-  --help      查看帮助;
-  --init      写默认关键字到key_list,按照关键字查找包并写入pkg_list;
-              文件在程序运行目录,可以手动改写,使用'#'注释,只支持整行注释;
-  --list      按照key_list表刷新pkg_list;
-  --hold      按照pkg_list列表名称hold package;
-  --unhold    按照pkg_list列表名称解除package的hold状态;
-  --show      按参数的关键字查看包状态;
-              --show list, 查看按照关键字找到的包列表
-              --show key,  查看关键字列表
-              --show 'nvidia xorg', 查看包含关键字‘nvidia’或‘xorg’的包的状态
+  --help      查看帮助; \n
+  --init      写默认关键字到key_list,按照关键字查找包并写入pkg_list; \n
+              文件在程序运行目录,可以手动改写,使用'#'注释,只支持整行注释; \n
+  --list      按照key_list表刷新pkg_list; \n
+  --hold      按照pkg_list列表名称hold package; \n
+  --unhold    按照pkg_list列表名称解除package的hold状态; \n
+  --show      按参数的关键字查看包状态; \n
+              --show list, 查看按照关键字找到的包列表 \n
+              --show key,  查看关键字列表 \n
+              --show 'nvidia xorg', 查看包含关键字‘nvidia’或‘xorg’的包的状态 \n
