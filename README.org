@@ -1,3 +1,5 @@
+#+OPTIONS: "\n:t"  
+
 *** hold你的linux桌面版
     通过设置package的hold或install属性，达到锁定/解锁package的目的，当package被设置成hold后，不能被删除和升级
 *** 说三遍
@@ -5,10 +7,12 @@
     这个脚本出于个人兴趣编写，您在使用之前请认真斟酌，出了问题概不负责！
     这个脚本出于个人兴趣编写，您在使用之前请认真斟酌，出了问题概不负责！
 *** 安装方法
+    #+BEGIN_SRC shell
     git clone https://github.com/hhlh3l/hold-pkg.git ~/.hold-pkg
     sudo chmod +x ~/.hold-pkg/hold-package.py
     cd /usr/bin
     sudo ln -s ~/.hold-pkg/hold-package.py  ./hold-pkg
+    #+END_SRC
 *** 参数说明
     | 参数   | 说明                                                                |
     |--------+---------------------------------------------------------------------|
