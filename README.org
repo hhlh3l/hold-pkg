@@ -14,6 +14,13 @@
     cd /usr/bin
     sudo ln -s ~/.hold-pkg/hold-package.py  ./hold-pkg
     #+END_SRC
+*** 这样使用
+    #+BEGIN_SRC shell
+    sudo hold-pkg --init
+    sudo hold-pkg --hold
+
+    and so on
+    #+END_SRC   
 *** 参数说明
     | 参数   | 说明                                                                |
     |--------+---------------------------------------------------------------------|
