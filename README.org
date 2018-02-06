@@ -1,13 +1,24 @@
-* 这么hold住你的linux桌面
-* 安装
-* 使用说明
-  --help      查看帮助; \n
-  --init      写默认关键字到key_list,按照关键字查找包并写入pkg_list; \n
-              文件在程序运行目录,可以手动改写,使用'#'注释,只支持整行注释; \n
-  --list      按照key_list表刷新pkg_list; \n
-  --hold      按照pkg_list列表名称hold package; \n
-  --unhold    按照pkg_list列表名称解除package的hold状态; \n
-  --show      按参数的关键字查看包状态; \n
-              --show list, 查看按照关键字找到的包列表 \n
-              --show key,  查看关键字列表 \n
-              --show 'nvidia xorg', 查看包含关键字‘nvidia’或‘xorg’的包的状态 \n
+*** hold你的linux桌面版
+    通过设置package的hold或install属性，达到锁定/解锁package的目的，当package被设置成hold后，不能被删除和升级
+*** 说三遍
+    这个脚本出于个人兴趣编写，您在使用之前请认真斟酌，出了问题概不负责！
+    这个脚本出于个人兴趣编写，您在使用之前请认真斟酌，出了问题概不负责！
+    这个脚本出于个人兴趣编写，您在使用之前请认真斟酌，出了问题概不负责！
+*** 安装方法
+    git clone https://github.com/hhlh3l/hold-pkg.git ~/.hold-pkg
+    sudo chmod +x ~/.hold-pkg/hold-package.py
+    cd /usr/bin
+    sudo ln -s ~/.hold-pkg/hold-package.py  ./hold-pkg
+*** 参数说明
+    | 参数   | 说明                                                                |
+    |--------+---------------------------------------------------------------------|
+    | help   | 查看帮助;                                                           |
+    | init   | 写默认关键字到key_list,按照关键字查找包并写入pkg_list;              |
+    |        | 文件在程序运行目录,可以手动改写,使用'#'注释,只支持整行注释;         |
+    | list   | 按照key_list表刷新pkg_list;                                         |
+    | hold   | 按照pkg_list列表名称hold package;                                   |
+    | unhold | 按照pkg_list列表名称解除package的hold状态;                          |
+    | show   | 按参数的关键字查看包状态;                                           |
+    |        | --show list, 查看按照关键字找到的包列表;                            |
+    |        | --show key,  查看关键字列表;                                        |
+    |        | --show 'nvidia xorg', 查看包含关键字‘nvidia’或‘xorg’的包的状态; |
